@@ -1,0 +1,22 @@
+{
+    "name": "wasm-image-converter",
+    "version": "0.1.0",
+    "description": "Image format converter powered by Rust and WebAssembly",
+    "main": "pkg/wasm_image_converter.js",
+    "types": "pkg/wasm_image_converter.d.ts",
+    "files": ["pkg"],
+    "scripts": {
+        "clean": "rm -rf pkg",
+        "build": "wasm-pack build --target web --out-dir pkg",
+        "rebuild": "rm -rf pkg && wasm-pack build --target web --out-dir pkg"
+    },
+    "keywords": ["rust", "wasm", "image", "converter"],
+    "author": "Oguz Vuruskaner",
+    "license": "MIT",
+    "peerDependencies": {
+        "wasm-pack": "*"
+    },
+    "engines": {
+    "wasm-pack": ">=0.10.0"
+  }
+  }

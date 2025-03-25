@@ -9,8 +9,7 @@
     ],
     "scripts": {
         "clean": "rimraf pkg",
-        "build": "wasm-pack build --target web --out-dir pkg",
-        "rebuild": "rimraf pkg && wasm-pack build --target web --out-dir pkg"
+        "build": "wasm-pack build --target web --out-dir pkg && rimraf pkg/.gitignore"
     },
     "keywords": [
         "rust",
